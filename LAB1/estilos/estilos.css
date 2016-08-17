@@ -1,0 +1,114 @@
+/* El * es para seleccionar todos los elementos del documento
+html */
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background: #CACACA;
+	font-family: Arial,Helvetica;
+}
+
+nav ul li{
+	border: 2px solid black;
+	display: inline-block;
+	padding: 10px;
+	font-size: 1.5em;
+	margin-right: 15px;
+	background: black;
+	cursor: pointer;
+	
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+li:hover{
+	background: #5369CA;
+}
+
+main{
+	text-align: center;
+}
+
+nav{
+	margin-top: 25px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+section{
+	width: 40%;
+	display: inline-block;
+	padding: 20px;
+	vertical-align: top;
+}
+
+section p{
+	background: #464646;
+	color:#D9D9D9;
+	padding: 10px;
+	font-size: 1.2em;
+	text-align: justify;
+}
+
+img{
+	max-width: 100%;
+}
+
+footer{
+	text-align: center;
+	background: #46ACF4;
+	padding: 20px;
+	color: black;
+}
+h3{
+	background: black;
+	color: white;
+	padding: 15px;
+}
+
+.pie{
+	background: #46ACF4;
+	color: black;
+}
+
+@media all and (max-width: 600px){
+	section{
+		width: 100%;
+	}
+
+	li{
+		display: block !important;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
