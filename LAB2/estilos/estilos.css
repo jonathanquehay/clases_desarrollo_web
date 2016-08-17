@@ -1,0 +1,130 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	color: white;
+	font-size: 18px;
+	padding: 12px;
+	text-decoration: none;
+}
+
+.articulo1,.articulo2, .formulario{
+	display: inline-block;
+	vertical-align: top;
+}
+.articulo1{
+	width: 40%;
+	margin:12px;
+}
+.articulo2{
+	width: 50%;
+	background: white;
+	margin: 12px;
+}
+
+.formulario{
+	background: #D35C10;
+	padding: 15px;
+}
+
+body{
+	background: black;
+	font-family: Helvetica;
+	color: white;
+	text-align: center;
+}
+button{
+	height: 4em;
+	width: 100%;
+	font-size: 16px;
+	font-weight: bold;
+}
+button:hover{
+	border:3px solid blue;
+	cursor: pointer; 
+	font-size: 14px;
+}
+
+textarea{
+	width: 100%;
+}
+
+figure img{
+	width: 100%;
+}
+figcaption{
+	background: white;
+	color: black;
+	margin-left: 15px;
+	padding: 20px;
+}
+
+footer{
+	background: orange;
+	margin-top: 15px;
+	padding: 20px;
+	text-align: center;
+}
+
+
+
+
+header{
+	border:5px solid #44E7FF;
+	padding: 40px;
+	text-align: center;
+	margin-top: 100px;
+}
+
+h1{
+	text-shadow: #0ff 2px 2px 20px;
+}
+
+hgroup h2{
+	text-shadow: #FF6B25 2px 2px 20px;
+	margin-top: 5px;
+}
+input{
+	width: 100%;
+	margin-bottom: 8px;
+	height: 2em;
+}
+
+
+nav{
+	background: rgba(60,60,150,0.8);
+	padding: 20px;
+	text-align: center;
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+}
+main{
+	margin-top: 15px;
+}
+nav ul li{
+	display: inline-block;
+	background: #BE3F33;
+	padding: 10px;
+	margin-right: 12px;	
+	border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
