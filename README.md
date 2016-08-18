@@ -3,10 +3,10 @@ Los proyectos que se realizan en los laboratorios UNAN FAREM Chontales en la cla
 
 Desarrollo de proyectos web utilizando:
 
--HTML
--CSS
--JQUERY
--MATERIALIZECSS
+-HTML5
+-CSS3
+-JQUERY (Javascript)
+-MATERIALIZECSS (Responsividad)
 -PHP
 -MYSQL
 -ANGULARJS
