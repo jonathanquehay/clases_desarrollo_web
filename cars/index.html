@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<title>Práctica Materialize</title>
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+		<link rel="stylesheet" href="css/estilos.css">		
+	</head>
+
+	<body class="grey lighten-2">
+		<div class="navbar-fixed">
+			<nav>
+				<div class="nav-wrapper grey darken-3">
+					<a href="#!" class="brand-logo">EXPOcar</a>
+					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+					<ul class="right hide-on-med-and-down ">
+						<li><a href="#inicio">Inicio</a></li>
+						<li><a href="#galeria">Exhibición</a></li>
+						<li><a href="#contacto">Contacto</a></li>
+					</ul>
+					<ul class="side-nav grey darken-3" id="mobile-demo">
+						<li><a href="#inicio" class="white-text">Inicio</a></li>
+						<li><a href="#galeria" class="white-text">Exhibición</a></li>
+						<li><a href="#contacto" class="white-text">Contacto</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
+
+		<header>
+			<div class="slider indice" id="inicio">
+				<ul class="slides">
+					<li>
+						<img src="img/car1.jpg"> 
+						<div class="caption center-align">
+							<h3>gran Exhibición de autos!</h3>
+							<h5 class="yellow-text">No te lo pierdas!.</h5>
+							<button type="button" class="waves-effect waves-light btn-large green">Participa!</button>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</header>
+
+			<section class="container galeria center indice" id="galeria">
+				<h4>Exhibiendo</h4>
+				<p class="blue-text">Exposición nacional de autos modificados 2016</p>
+				<div class="row">
+					<div class="col s12 m4 l4">
+						<div class="card">
+							<div class="card-image">
+								<img src="img/car2.jpg">
+								<span class="card-title">Carros Mustang</span>
+							</div>
+							<div class="card-content">
+								<p class="left-align">Ajústate el cinturón de seguridad. Cada motor produce al menos 300 caballos de fuerza. El motor V6 de 3.7L ofrece hasta 300 c.f. y 280 lb-pie de torsión, es estándar en el modelo V6 Fastback.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col s12 m4 l4">
+						<div class="card">
+							<div class="card-image">
+								<img src="img/car3.jpg">
+								<span class="card-title">Carros Corvette</span>
+							</div>
+							<div class="card-content">
+								<p class="left-align">Desde un sonido gutural y profundo al ralentí, hasta la gran potencia de tracción en la aceleración, el motor representa todo el desempeño. Produce 435 caballos de fuerza.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col s12 m4 l4">
+						<div class="card">
+							<div class="card-image">
+								<img src="img/car4.jpg">
+								<span class="card-title">Carros Camaro</span>
+							</div>
+							<div class="card-content">
+								<p class="left-align">El motor está diseñado para maximizar la generación de potencia desde cada compresión, con grandes válvulas de admisión y escape, cabezas de cilindros que incluyen puertos de alto flujo.</p>
+							</div>
+						</div>					
+				</div>
+			</section>
+
+		<div class="parallax-container">
+			<div class="parallax"><img src="img/car5.jpg"></div>
+			<h2 class="white-text center-align">A Toda Velocidad!</h2>
+		</div>
+
+		<section class="container contacto indice center" id="contacto">
+			<h4>Contacto</h4>
+			<p class="blue-text">Recibe noticias del evento</p>
+			<div class="row">
+				<div class="col s12 m6 l6">
+					<form>
+						<div class="input-field col s12">
+							<i class="mdi-action-account-circle prefix"></i>
+							<input id="icon_prefix" type="text" class="validate">
+							<label for="icon_prefix">Nombre y Apellido:</label>
+						</div> 
+
+						<div class="input-field col s12">
+							<i class="mdi-communication-email prefix"></i>
+							<input id="icon_prefix" type="text" class="validate">
+							<label for="icon_prefix">Correo electrónico:</label>
+						</div>
+
+						<div class="input-field col s12 center">
+						     <i class="mdi-editor-mode-edit prefix"></i>
+						     <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+						     <label for="icon_prefix2">Mensaje:</label>
+						</div>
+
+						<button type="button" class="btn waves-effect waves-light">Enviar<i class="mdi-content-send right"></i></button>
+					</form>
+				</div><br>
+				<div class="col s12 m6 l6">
+					<h5>Ven y participa!</h5>
+					<i class="mdi-action-store medium"></i>
+					<h6>Managua, Nicaragua</h6>
+					<div class="divider"></div><br>
+					<h5>Redes Sociales</h5>
+						<p class="left-align">Facebook</p>
+						<p class="center-align">Twitter</p>
+						<p class="right-align">Google+</p>
+
+				</div>
+		
+			</div>
+		</section>
+
+		<footer class="page-footer grey darken-3">
+			<div class="footer-copyright">
+				<div class="container center">
+					© 2016 Exhibición Managua
+				</div>
+			</div>
+		</footer>
+
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/codigo.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+	</body>
+</html>
+
+
