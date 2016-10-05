@@ -1,0 +1,93 @@
+Códigos útiles para conectar a bases de datos y ver los registros (Ingrese cada uno de los codigos en un archivo aparte conformato php y en una carpeta llamada inc)
+
+//conexion.php - realiza la conexion a la base de datos, recuerde agregar privilegios a un nuevo usuario
+
+<?php
+	$mysqli=new mysqli("servidor","usuario","password","basededatos");
+	if(mysqli_connect_errno()){
+		echo 'Conexion fallida:', mysqli_connect_error();
+		exit();
+	}
+	mysqli_set_charset($mysqli, "utf8");//Ubica las tildes a los registros
+?>
+
+
+//nuevo.php Agregar nuevos registros a la base de datos
+<?php
+  require('conexion.php');
+
+  $dato1=$_POST['nombre_del_text'];
+  $dato2=$_POST['nombre_del_text'];
+
+  $consulta="INSERT INTO tabla(col1,col2) VALUES ('$dato1','$dato2')";
+  $resultado=$mysqli->query($consulta);
+  header("Location: ../index.php"); 
+  exit(); 
+?>
+
+//eliminar.php Elimina registros de la base de datos
+<?php
+  require('conexion.php');
+  $id=$_GET['id'];
+
+  $consulta="DELETE FROM tabla WHERE id='$id'";
+  $resultado=$mysqli->query($consulta);
+  header("Location: ../index.php"); 
+  exit(); 
+?>
+
+//modificar.php Modifica los registros de la base de datos
+<?php
+  require('conexion.php');
+  $id=$_POST['id'];
+
+  $dato1=$_POST['nombre_del_text'];
+  $dato2=$_POST['nombre_del_text'];
+
+  $consulta="UPDATE tabla SET col1='$dato1',col2='$dato2' WHERE id='$id'";
+  $resultado=$mysqli->query($consulta);
+  header("Location: ../index.php");
+  exit(); 
+?>
+
+
+//Antes de iniciar los html agregar las siguientes lineas para poder visualizar los registros y conectar a la base de datos
+<?php
+  require('inc/conexion.php');
+
+  $consulta="SELECT id,nombre,trabajo FROM datos";
+  $resultado=$mysqli->query($consulta);
+?>
+
+//Para poder recorrer los registros debe de agregar un ciclo while despues y antes de las etiquetas de publicacion
+
+ <?php while($fila=$resultado->fetch_assoc()){ ?>
+
+ //Agregar dentro del ciclo las etiquetas que desea que representen las columnas y los registros a visualizar
+
+ 	<?php echo $fila['trabajo']; ?>
+
+ 	por ej:
+
+ 	dentro de un h1
+
+ 	<h1><?php echo $fila['trabajo']; ?></h1>
+
+
+ <?php } ?>
+
+ *en tablas ubicar despues de la etiqueta <tbody> y cerrar el ciclo antes del </tbody>
+
+ //Acordarse de agregar los llamados a Jquery y a la funcion ready antes del body
+
+    $(document).ready(function() {
+    	$(".button-collapse").sideNav();
+  	});
+
+//Llamado al boton eliminar
+
+<td class="center"><a href="inc/eliminar.php?id=<?php echo $fila['id'];?>"><i class="mdi-action-highlight-remove small center"></i></a></td>
+
+
+
+* Agregar al form el action="archivo.php" y el method="post"
